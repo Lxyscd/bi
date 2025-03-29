@@ -45,6 +45,10 @@ public class Chart {
 
 
     private String name;
+
+    private String status;
+
+    private String execMessage;
     /**
      * 创建用户 id
      */

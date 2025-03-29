@@ -25,3 +25,8 @@ spring:
     uris: http://localhost:9200
     username: root
     password: 123456
+xun-fei:
+  client:
+    appId: fab07dd4
+    apiSecret: YTU4YWU3YTg3MDM2ZjBjOTdkMzdjNWY2
+    apiKey: 741b9c4ddea50fe9d6f175233a7e7130

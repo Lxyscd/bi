@@ -11,6 +11,8 @@ import io.github.briqt.spark4j.constant.SparkApiVersion;
 import io.github.briqt.spark4j.model.SparkMessage;
 import io.github.briqt.spark4j.model.request.SparkRequest;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -95,6 +97,7 @@ public class AiManager {
                 .apiVersion(SparkApiVersion.V4_0)
                 .build();
         // 同步调用
+        //sparkClient=new SparkClient();
         String responseContent = sparkClient.chatSync(sparkRequest).getContent().trim();
         if (!isNeedTemplate) {
             return responseContent;
